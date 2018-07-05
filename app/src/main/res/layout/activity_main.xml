@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="How Well Do You Know Taylor Swift?"
+            android:textAlignment="center"
+            android:textColor="#e8e8e8"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:src="@mipmap/tswiz"
+
+            android:tintMode="multiply" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Test your Swiftie Snake Smarts with this TayTay trivia!"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1) Which of her cats did Taylor adopt first?" />
+
+        <RadioGroup
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sergeant Olivia Acker Swift"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professor Meredith Sorenson Swift"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detective Olivia Benson Swift"
+                />
+
+            <RadioButton
+                android:id="@+id/right"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr Meredith Grey Swift"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans1"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) What is Taylor's favourite thing to do in her free time?" />
+
+        <RadioGroup
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design greeting cards"
+               />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hang out with her friends"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bake cookies"
+
+                />
+
+            <RadioButton
+                android:id="@+id/right2"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watch TV shows with her cats"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans2"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3) What is Taylor's favourite creative activity (apart from music)?" />
+
+        <RadioGroup
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sketching landscapes"
+                />
+
+            <RadioButton
+
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polaroid photography"
+                />
+
+            <RadioButton
+                android:id="@+id/right3"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watercolour painting"
+                />
+
+            <RadioButton
+
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Making new cookie recipes"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans3"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4) Who did Taylor play the Best-Best Friends Challenge with in 2015?" />
+
+        <RadioGroup
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selena Gomez"
+                />
+
+            <RadioButton
+                android:id="@+id/right4"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karlie Kloss"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blake Lively"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gigi Hadid"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans4"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5) Which of her friends has Taylor known the longest?" />
+
+        <RadioGroup
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ed Sheeran"
+              />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Martha Hunt"
+                />
+
+            <RadioButton
+                android:id="@+id/right5"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selena Gomez"
+               />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todrick Hall"
+              />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans5"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6) What nickname does Taylor's brother use for her?" />
+
+        <RadioGroup
+            android:id="@+id/r6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/right6"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teffy"
+              />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taffy"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tessy"
+               />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T-Swizzy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans6"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7) Taylor's biggest irrational fear is: " />
+
+        <RadioGroup
+            android:id="@+id/r7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drowning in quicksand"
+                />
+
+            <RadioButton
+                android:id="@+id/right7"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Getting framed for a crime"
+                />
+
+            <RadioButton
+
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Getting stranded somewhere isolated"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Having amnesia"
+             />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans7"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8) Taylor's dad is known to: " />
+
+        <RadioGroup
+            android:id="@+id/r8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hand out Taylor Swift wristbands to fans"
+               />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite people to meet Taylor"
+                />
+
+            <RadioButton
+                android:id="@+id/right8"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hand out Taylor Swift guitar picks to fans"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hang out with fans at meet and greets"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans8"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9) What does Taylor always have in her fridge?" />
+
+        <RadioGroup
+            android:id="@+id/r9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guacamole"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cookies"
+              />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinnamon Rolls"
+                />
+
+            <RadioButton
+                android:id="@+id/right9"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hummus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans9"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10) What song does Taylor find the most emotional to perform?" />
+
+        <RadioGroup
+            android:id="@+id/r10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clean"
+                />
+
+            <RadioButton
+                android:id="@+id/right10"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Best Day"
+               />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teardrops on my Guitar"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Too Well"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans10"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11) Where did Taylor take one of her all time favourite vacations? " />
+
+        <RadioGroup
+            android:id="@+id/r11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/right11"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Big Sur"
+             />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Great Barrier Reef"
+              />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disney Land Florida"
+               />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans11"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12) Taylor's mum accompanied her at meet and greets during which tours?" />
+
+        <RadioGroup
+            android:id="@+id/r12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fearless and Speak Now"
+          />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fearless, Speak Now and Red"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speak Now, Red and 1989"
+                />
+
+            <RadioButton
+                android:id="@+id/right12"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All of them"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans12"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+
+
+        <TextView
+            style="@style/questionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13) Taylor finds the number 13 special because:  " />
+
+        <RadioGroup
+            android:id="@+id/r13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/right13"
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It always brings her good fortune "
+             />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="She just likes it"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most people find it unlucky"
+                />
+
+            <RadioButton
+                style="@style/rButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="She was born on the 13th of December"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rButtonTheme"
+                android:id="@+id/ans13"
+                android:text=""
+                />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Are you ready for it?"
+            android:onClick="onSubmit"
+            android:textSize="22sp"
+            android:padding="30dp"/>
+
+        <TextView
+            android:id="@+id/scoreNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="--"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text=""
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Play again"
+            android:textSize="20sp"
+            android:padding="30dp"
+            android:onClick="reset"/>
+
+    </LinearLayout>
+
+</ScrollView>
